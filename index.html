@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nkosinathi Manu Dhanda" />
+    <meta
+      name="description"
+      content="This is an Intro Component with Sign-Up Form"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Intro Component with Sign-Up Form</title>
+  </head>
+
+  <body>
+    <section class="section-wrapper">
+      <header class="hero">
+        <h1 class="hero__title center">Learn to code by watching others</h1>
+
+        <p class="hero__description center">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+
+      <main>
+        <div class="main__cta center">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </div>
+
+        <form action="#" class="signup-form" id="signUpForm" novalidate>
+          <div class="form-container">
+            <!-- First Name -->
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="firstName"
+                class="first-name"
+                required
+                placeholder="First Name"
+              />
+
+              <figure class="status-icon">
+                <img
+                  src="./images/icon-error.svg"
+                  alt="icon-error"
+                  width="24"
+                  height="24"
+                />
+
+                <figcaption class="offscreen">icon-error</figcaption>
+              </figure>
+
+              <p class="message">hello</p>
+            </div>
+
+            <!-- Last Name -->
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="lastName"
+                class="last-name"
+                required
+                placeholder="Last Name"
+              />
+
+              <figure class="status-icon">
+                <img
+                  src="./images/icon-error.svg"
+                  alt="icon-error"
+                  width="24"
+                  height="24"
+                />
+
+                <figcaption class="offscreen">icon-error</figcaption>
+              </figure>
+
+              <p class="message">hello</p>
+            </div>
+
+            <!-- Email -->
+            <div class="input-wrapper">
+              <input
+                type="email"
+                name="email"
+                class="email-input"
+                required
+                placeholder="Email Address"
+              />
+
+              <figure class="status-icon">
+                <img
+                  src="./images/icon-error.svg"
+                  alt="icon-error"
+                  width="24"
+                  height="24"
+                />
+
+                <figcaption class="offscreen">icon-error</figcaption>
+              </figure>
+
+              <p class="message">hello</p>
+            </div>
+
+            <div class="input-wrapper">
+              <input
+                type="password"
+                name="password"
+                class="password-input"
+                required
+                placeholder="Password"
+              />
+
+              <figure class="status-icon">
+                <img
+                  src="./images/icon-error.svg"
+                  alt="icon-error"
+                  width="24"
+                  height="24"
+                />
+
+                <figcaption class="offscreen">icon-error</figcaption>
+              </figure>
+
+              <p class="message">hello</p>
+            </div>
+
+            <button type="submit" class="sign-up-btn nowrap">
+              CLAIM YOUR FREE TRIAL
+            </button>
+          </div>
+
+          <p class="termsOfServices">
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>
