@@ -219,6 +219,7 @@ input.invalid {
   top: 50%;
   transform: translateY(-50%);
   right: 16.38px;
+  display: none;
 }
 
 .status-icon img {
