@@ -45,25 +45,25 @@ img {
 
   /* TYPOGRAPHY-SHARED */
   --DESCRIPTION-SHARED: 500 1rem/1.625rem var(--FF);
-  --CTA-MOB: bold 0.9375rem/1.625rem var(--FF);
-  --CTA-LS-MOB: 0.0169rem;
-  --CTA-BOLD-MOB: bold;
-  --INPUT-MOB: 600 0.875rem/1.625rem var(--FF);
-  --INPUT-LS-MOB: 0.0156rem;
-  --SUBMIT-BUTTON-MOB: 600 0.9375rem/1.625rem var(--FF);
-  --SUBMIT-BUTTON-LS-MOB: 0.0625rem;
-  --TCS-LINK-MOB: bold;
-  --MESSAGE-MOB: italic 500 0.6875rem var(--FF);
+  --CTA-SHARED: normal 0.9375rem/1.625rem var(--FF);
+  --CTA-LS-SHARED: 0.0169rem;
+  --CTA-BOLD-SHARED: bold;
+  --INPUT-SHARED: 600 0.875rem/1.625rem var(--FF);
+  --INPUT-LS-SHARED: 0.0156rem;
+  --SUBMIT-BUTTON-SHARED: 600 0.9375rem/1.625rem var(--FF);
+  --SUBMIT-BUTTON-LS-SHARED: 0.0625rem;
+  --TCS-LINK-SHARED: bold;
+  --MESSAGE-SHARED: italic 500 0.6875rem var(--FF);
 
   /* TYPOGRAPHY-MOB */
   --TITLE-MOB: bold 1.75rem/2.25rem var(--FF);
   --TITLE-LS-MOB: -0.0181rem;
-  --TCS-MOB: bold 0.6875rem/1.3125rem var(--FF);
+  --TCS-MOB: 500 0.6875rem/1.3125rem var(--FF);
 
   /* TYPOGRAPHY-DSK */
   --TITLE-DSK: bold 3.125rem/3.4375rem var(--FF);
-  --TITLE-LS-DSK: -0.52;
-  --TCS-DSK: bold 0.6875rem/1.625rem var(--FF);
+  --TITLE-LS-DSK: -0.0325rem;
+  --TCS-DSK: 500 0.6875rem/1.625rem var(--FF);
 }
 
 /* || UTILITY CLASSES */
@@ -94,6 +94,12 @@ body {
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
+  display: grid;
+  place-content: center;
+  padding: 88px 1.5rem 4.25rem;
+  background-color: var(--BODY-BG);
+  background-image: url("./images/bg-intro-mobile.png");
+  background-repeat: repeat;
 }
 
 h1,
@@ -106,5 +112,162 @@ h2 {
 
 a:any-link {
   text-decoration: none;
-  color: black;
+}
+
+/* || WRAPPER */
+.section-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* || HERO */
+.hero__title {
+  font: var(--TITLE-MOB);
+  color: var(--TITLE-CLR);
+  max-width: 327px;
+  letter-spacing: var(--TITLE-LS-MOB);
+  margin-bottom: 1rem;
+}
+
+.hero__description {
+  font: var(--DESCRIPTION-SHARED);
+  color: var(--DESCRIPTION-CLR);
+  max-width: 327px;
+}
+
+/* || MAIN */
+main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main__cta {
+  background-color: var(--CTA-BG);
+  max-width: 327px;
+  height: 88px;
+  padding: 1.125rem 4.125rem 1.125rem 4.1875rem;
+  color: var(--CTA-CLR);
+  font: var(--CTA-SHARED);
+  letter-spacing: var(--CTA-LS-SHARED);
+  box-shadow: var(--CTA-SHADOW);
+  border-radius: 10px;
+}
+
+.main__cta span {
+  font-weight: var(--CTA-BOLD-SHARED);
+}
+
+.signup-form {
+  width: 327px;
+  min-height: 442px;
+  border-radius: 10px;
+  background-color: var(--FORM-BG);
+  box-shadow: var(--FORM-SHADOW);
+  padding: 1.5rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 279px;
+}
+
+input {
+  width: 100%;
+  padding: 0.9375rem calc(16.38px + 24px + 12px) 0.9375rem 1.2131rem;
+  color: var(--INPUT-CLR);
+  font: var(--INPUT-SHARED);
+  letter-spacing: var(--INPUT-LS-SHARED);
+  border: 1px solid var(--INPUT-BORDER-CLR);
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: var(--PLACEHOLDER-CLR);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input.valid {
+  color: var(--INPUT-CLR);
+}
+
+input.invalid {
+  color: var(--ERROR-MESSAGE);
+  border-color: var(--ERROR-MESSAGE);
+}
+
+.status-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16.38px;
+}
+
+.status-icon img {
+  max-width: 24px;
+}
+
+.message {
+  position: absolute;
+  right: 0px;
+  top: 59px;
+  margin-bottom: 0.375rem;
+  display: none;
+  font: var(--MESSAGE-SHARED);
+}
+
+.error-message {
+  color: var(--ERROR-MESSAGE);
+}
+
+.success-message {
+  color: var(--SUCCESS-MESSAGE);
+}
+
+.sign-up-btn {
+  text-transform: uppercase;
+  font: var(--SUBMIT-BUTTON-SHARED);
+  letter-spacing: var(--SUBMIT-BUTTON-LS-SHARED);
+  color: var(--SUBMIT-BUTTON-CLR);
+  background-color: var(--SUBMIT-BUTTON-BG);
+  line-height: 3.5rem;
+  padding: 0rem 2.6875rem;
+  box-shadow: var(--SUBMIT-BUTTON-SHADOW);
+  border-radius: 0.3125rem;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-up-btn:disabled {
+  background-color: var(--SUBMIT-BUTTON-DISABLED-BG);
+  cursor: not-allowed;
+}
+
+.termsOfServices {
+  font: var(--TCS-MOB);
+  color: var(--TCS-CLR);
+  max-width: 249px;
+}
+
+.termsOfServices a {
+  font-weight: var(--TCS-LINK-SHARED);
+  color: var(--TCS-LINK-CLR);
 }
