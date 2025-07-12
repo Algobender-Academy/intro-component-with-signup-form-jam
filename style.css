@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* || REST */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --BODY-BG: #ff7979;
+  --TITLE-CLR: #fff;
+  --DESCRIPTION-CLR: #fff;
+  --CTA-CLR: #fff;
+  --CTA-BG: #5e54a4;
+  --FORM-BG: #fff;
+  --INPUT-CLR: #3d3b48;
+  --PLACEHOLDER-CLR: hsla(249, 10%, 26%, 0.75);
+  --INPUT-BORDER-CLR: #dedede;
+  --SUBMIT-BUTTON-BG: #38cc8b;
+  --SUBMIT-BUTTON-CLR: #fff;
+  --TCS-CLR: #bab7d4;
+  --TCS-LINK-CLR: #ff7979;
+
+  /* COLORS-STATES */
+  --ERROR-MESSAGE: #ff7979;
+  --SUCCESS-MESSAGE: green;
+  --SUBMIT-BUTTON-DISABLED-BG: #6c757d;
+
+  /* SHADOWS */
+  --CTA-SHADOW: 0px 8px 0px 0px hsla(0, 0%, 0%, 0.15);
+  --FORM-SHADOW: 0px 8px 0px 0px hsla(0, 0%, 0%, 0.15);
+  --SUBMIT-BUTTON-SHADOW: inset 0px -4px 0px 0px hsla(0, 0%, 0%, 0.0909);
+
+  /* TYPOGRAPHY */
+  --FF: "Poppins", sans-serif;
+
+  /* TYPOGRAPHY-SHARED */
+  --DESCRIPTION-SHARED: 500 1rem/1.625rem var(--FF);
+  --CTA-MOB: bold 0.9375rem/1.625rem var(--FF);
+  --CTA-LS-MOB: 0.0169rem;
+  --CTA-BOLD-MOB: bold;
+  --INPUT-MOB: 600 0.875rem/1.625rem var(--FF);
+  --INPUT-LS-MOB: 0.0156rem;
+  --SUBMIT-BUTTON-MOB: 600 0.9375rem/1.625rem var(--FF);
+  --SUBMIT-BUTTON-LS-MOB: 0.0625rem;
+  --TCS-LINK-MOB: bold;
+  --MESSAGE-MOB: italic 500 0.6875rem var(--FF);
+
+  /* TYPOGRAPHY-MOB */
+  --TITLE-MOB: bold 1.75rem/2.25rem var(--FF);
+  --TITLE-LS-MOB: -0.0181rem;
+  --TCS-MOB: bold 0.6875rem/1.3125rem var(--FF);
+
+  /* TYPOGRAPHY-DSK */
+  --TITLE-DSK: bold 3.125rem/3.4375rem var(--FF);
+  --TITLE-LS-DSK: -0.52;
+  --TCS-DSK: bold 0.6875rem/1.625rem var(--FF);
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.responsive-image {
+  display: none;
+}
+
+/* MOBILE FIRST DESIGN */
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+a:any-link {
+  text-decoration: none;
+  color: black;
+}
