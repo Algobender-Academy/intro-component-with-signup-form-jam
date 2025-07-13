@@ -18,6 +18,7 @@ if (form && inputs && submitBtn) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     let formIsValid = true;
+    updateSubmitState();
 
     inputs.forEach((input) => {
       if (!validateInput(input)) formIsValid = false;

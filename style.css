@@ -272,3 +272,7 @@ input.invalid {
   font-weight: var(--TCS-LINK-SHARED);
   color: var(--TCS-LINK-CLR);
 }
+
+/* || Desktop */
+@media screen and (min-width: 992px) {
+}
