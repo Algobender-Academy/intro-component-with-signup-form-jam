@@ -78,10 +78,9 @@ if (form && inputs && submitBtn) {
     }
 
     // Error and Success Handlers
-    function setError(message) {
+    function setError(msg) {
       isValid = false;
       input.classList.add("invalid");
-      input.classList.remove("valid");
       icon.style.display = "block";
       icon.innerHTML = `
         <img
@@ -94,15 +93,14 @@ if (form && inputs && submitBtn) {
         <figcaption class="offscreen">icon-error</figcaption>
       `;
       message.style.display = "block";
-      message.textContent = message;
+      message.textContent = msg;
       message.classList.add("error-message");
       message.classList.remove("success-message");
     }
 
-    function setSuccess(message) {
+    function setSuccess(msg) {
       isValid = true;
       input.classList.add("valid");
-      input.classList.remove("invalid");
       icon.style.display = "block";
       icon.innerHTML = `
         <img
@@ -115,7 +113,7 @@ if (form && inputs && submitBtn) {
         <figcaption class="offscreen">icon-success</figcaption>
       `;
       message.style.display = "block";
-      message.textContent = message;
+      message.textContent = msg;
       message.classList.remove("error-message");
       message.classList.add("success-message");
     }
