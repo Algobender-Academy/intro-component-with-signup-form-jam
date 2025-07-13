@@ -74,7 +74,7 @@ if (form && inputs && submitBtn) {
         setSuccess("Strong password!");
       }
     } else {
-      setSuccess("Strong password!");
+      setSuccess("Looks good!");
     }
 
     // Error and Success Handlers
