@@ -338,6 +338,10 @@ input.invalid {
     padding: 0rem 8.3125rem;
   }
 
+  .sign-up-btn:hover {
+    background-color: #77e2b3;
+  }
+
   .termsOfServices {
     font: var(--TCS-DSK);
     max-width: 369px;
