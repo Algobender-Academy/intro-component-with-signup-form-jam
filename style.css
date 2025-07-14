@@ -177,7 +177,7 @@ main {
 .form-container {
   display: flex;
   flex-flow: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .input-wrapper {
@@ -230,7 +230,6 @@ input.invalid {
   position: absolute;
   right: 0px;
   top: 59px;
-  margin-bottom: 0.375rem;
   display: none;
   font: var(--MESSAGE-SHARED);
 }
@@ -275,4 +274,73 @@ input.invalid {
 
 /* || Desktop */
 @media screen and (min-width: 992px) {
+  body {
+    padding: 7.5625rem 10.3125rem;
+    background-image: url("./images/bg-intro-desktop.png");
+  }
+
+  /* || WRAPPER */
+  .section-wrapper {
+    flex-flow: row;
+    gap: 2.8125rem;
+  }
+
+  /* || HERO */
+  .hero__title {
+    font: var(--TITLE-DSK);
+    text-align: left;
+    max-width: 525px;
+    letter-spacing: var(--TITLE-LS-DSK);
+    margin-bottom: 0.6875rem;
+  }
+
+  .hero__description {
+    text-align: left;
+    max-width: 525px;
+  }
+
+  /* || MAIN */
+  .main__cta {
+    max-width: 540px;
+    height: 60px;
+    padding: 1.0625rem 6.875rem 1.0625rem 6.9375rem;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .signup-form {
+    width: 540px;
+    min-height: 474px;
+    padding: 2.5rem;
+  }
+
+  .form-container {
+    gap: 20px;
+  }
+
+  .input-wrapper {
+    max-width: 460px;
+  }
+
+  input {
+    padding: 0.9375rem calc(27px + 24px + 12px) 0.9375rem 2rem;
+  }
+
+  .status-icon {
+    right: 27px;
+  }
+
+  .message {
+    top: 62px;
+  }
+
+  .sign-up-btn {
+    padding: 0rem 8.3125rem;
+  }
+
+  .termsOfServices {
+    font: var(--TCS-DSK);
+    max-width: 369px;
+    text-align: left;
+  }
 }

@@ -1,6 +1,7 @@
 const form = document.querySelector("#signUpForm");
 const inputs = form.querySelectorAll("input"); // NodeList
 const submitBtn = form.querySelector(".sign-up-btn");
+const formContainer = form.querySelector(".form-container");
 
 // Safety check
 if (form && inputs && submitBtn) {
@@ -97,6 +98,12 @@ if (form && inputs && submitBtn) {
       message.textContent = msg;
       message.classList.add("error-message");
       message.classList.remove("success-message");
+
+      if (window.matchMedia("(min-width: 992px)").matches) {
+        formContainer.style.gap = "42px";
+      } else {
+        formContainer.style.gap = "30px";
+      }
     }
 
     function setSuccess(msg) {
@@ -117,6 +124,12 @@ if (form && inputs && submitBtn) {
       message.textContent = msg;
       message.classList.remove("error-message");
       message.classList.add("success-message");
+
+      if (window.matchMedia("(min-width: 992px)").matches) {
+        formContainer.style.gap = "42px";
+      } else {
+        formContainer.style.gap = "30px";
+      }
     }
 
     return isValid;
