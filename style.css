@@ -207,11 +207,14 @@ input:focus {
 
 input.valid {
   color: var(--INPUT-CLR);
+  border-color: var(--CTA-BG);
+  caret-color: var(--CTA-BG);
 }
 
 input.invalid {
   color: var(--ERROR-MESSAGE);
   border-color: var(--ERROR-MESSAGE);
+  caret-color: var(--ERROR-MESSAGE);
 }
 
 .status-icon {
